@@ -5,32 +5,23 @@
 
 # Clear existing ./dist (doesn't apply to git workflow)
 echo "===== Clear Existing ./dist ====="
-if [-d ./dist]; then
+if [ -d "./dist" ]; then
     rm -rf ./dist;
 fi
 
-# Copy /src files to /dist
+# Creat ./dist and add files
+echo "===== Copy Files to ./dist ====="
+mkdir dist
+cd dist
+cp ../src/js . -r
+cp ../src/games/ . -r
+cp ../src/CNAME .
+mv ./games ./swf
+
+
+# Generate pages for each game
 echo "===== Writing Files to ./dist ====="
-for file in ./src/*; do
-    # Prevent copying directories
+for file in ./swf/*; do
+    echo $file;
+    node ../src/utils/buildHtml.js $file
 done
-
-# echo "===== Build HTML From Markdown ====="
-# for file in ./dist/projects/*.md; do
-#     echo $file
-
-#     # $file and tempalte.html specify the target .md file and the html template
-#     node ./utils/markdownBuilder.js $file ./utils/template.html
-#     rm $file
-# done
-
-# for file in ./dist/posts/*.md; do
-#     echo $file
-    
-#     # $file and tempalte.html specify the target .md file and the html template
-#     node ./utils/markdownBuilder.js $file ./utils/template.html
-#     rm $file
-# done
-
-# echo "===== Generate Custom Content ====="
-# for 

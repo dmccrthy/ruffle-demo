@@ -1,0 +1,9 @@
+{
+    "name": "Games Github Pages Workflow",
+    "description": "Handles updating github pages with flash games",
+    "iconName": "octicon browser",
+    "categories": [
+        "JavaScript",
+        "Pages"
+    ]
+}
