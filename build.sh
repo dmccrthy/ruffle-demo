@@ -16,6 +16,7 @@ cd dist
 cp ../src/js . -r
 cp ../src/games/ . -r
 cp ../src/CNAME .
+cp ../src/index.html .
 mv ./games ./swf
 
 
