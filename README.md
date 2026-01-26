@@ -14,4 +14,4 @@ For a full list of the current games, look at the /src/games folder.
 
 ## NOTE:
 
-**None of the flash games here are mine, and I make no claim to have made them. They are all fairly popular and available else where. The license attached to this repository applies to my work only, with each game being subject to there own license.**
+**None of the flash games here are mine, and I make no claim to have made them. They are all fairly popular and available elsewhere. The license attached to this repository applies to my work only, with each game being subject to their own license.**
